@@ -1,10 +1,138 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>MIKE</title>
-  </head>
-  <body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar transparent">
+        <div class="container">
+            <a href="#" class="navbar-brand">MIKE</a>
+            <div class="d-flex justify-content-between align-items-center nav-menu">
+                <div>
+                    <input class="form-control searchbox " type="text" placeholder="Search" aria-label="Search">
+                    <img class="mob" src="assets/Mobile/Search.svg" alt="">
+                </div>
+                <div class="d-flex">
+                    
+                    <img class="web" src="assets/Web/Cart.svg" alt="">
+                    <img class="mob" src="assets/Mobile/Cart.svg" alt="">
+                    <div class="item-count"><p>0</p></div>
+                </div>
+                <div>        
+                    <img class="web" src="assets/Web/MenuHamburger.svg" alt="">
+                    <img class="mob" src="assets/Mobile/MenuHamburger.svg" alt="">
+                </div>
+                
+            </div>
+        </div>
+    </nav>
 
-  </body>
+    <section id="product-section">
+        <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-6">
+                <img class=" product-image-web" src="assets/Web/ShoeLarge.png" alt="Picture of Gray Running Sneaker">
+            </div>
+            <div class="col-lg-6 col-md-6">
+                <p class="pages">Man
+                    <i class="fa fa-caret-right" aria-hidden="true"></i> 
+                    Shoes 
+                    <i class="fa fa-caret-right" aria-hidden="true"></i>
+                    <span class="active">Gray Running Shoes</span>
+                </p>
+                <div class="d-flex justify-content-center">
+                    <h1 class="product-name">Black Running Sneakers</h1>
+                </div>
+                <img class="product-image-mob" src="assets/Mobile/ShoeSmall.png" alt="Picture of Gray Running Sneaker">
+                
+                <p class="rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star-half-o checked"></span>
+                    <span class="votes">18 votes</span>
+                </p>
+                
+                <p><span class="price">₹16,959.99</span> <span class="market-price"> ₹20,069.99</span></p>
+                
+                
+                
+                <p>Neoprene and membrane boots.
+                    Rubber insert with lacing over foot and back on heel.
+                    Lining and insole of the membrane
+                </p>
+                <div class="d-flex justify-content-between order-info">
+                    <div class="d-flex flex-column justify-content-center align-items-center info-color">
+                        <p class="order-info-title">COLOR</p>
+                        <div class="color">
+                            <button class="color-option black"></button>
+                            <button class="color-option white"></button>
+                            <button class="color-option maroon"></button>
+                        </div> 
+                    </div>
+                    <div class="d-flex flex-column justify-content-center align-items-center info-size">
+                        <p class="order-info-title">SIZE</p>
+                        <select class="form-select">
+                            <option selected value="48">48</option>
+                            <option value="47">47</option>
+                            <option value="46">46</option>
+                        </select> 
+                    </div>
+                    <div class="d-flex flex-column justify-content-center align-items-center info-quantity">
+                        <p class="order-info-title">QUANTITY</p>
+                        <div class="quantity-info" >
+                            <div>
+                                <button id="decrease" onclick="minus()" class="quantity-control">-</button>
+                                
+                              </div>
+                              <div><p id="quantity">1</p></div>
+                              <div>
+                                <button id="increase" onclick="plus()" class="quantity-control">+</button>
+                                  
+                                </div>
+                        </div> 
+                    </div>
+                </div>
+                    
+ 
+                    <div class="d-flex btns justify-content-center align-items-center">
+                        <button class="btn btn-primary"><img class="btn-img" src="assets/Web/AddToCart.svg" alt=""> Add to Cart.</button>
+                        <button class="btn like-btn"><img class="btn-img" src="assets/Web/Like.svg" alt=""> Save to Wishlist</button>
+                   
+                    </div>
+                    <p class="delivery-info">Standard delivery in 2-4 days or Premium delivery in 2-4 hours</p>
+            </div>
+        </div>
+        </div>
+    </section>
+    <div class="color-ruler"></div>
+    <footer>
+        <div class="logos">
+            
+                <div class="logo-background">
+                    <img class="logo web" src="assets/Web/Facebook.svg" alt="">
+                    <img class="logo mob" src="assets/Mobile/Facebook.svg" alt="">
+                </div>
+                <div class="logo-background">
+                    <img class="logo web" src="assets/Web/Twitter.svg" alt="">
+                    <img class="logo mob" src="assets/Mobile/Twitter.svg" alt="">
+                </div>
+                <div class="logo-background">
+                    <img class="logo web" src="assets/Web/Instagram.svg" alt="">
+                    <img class="logo mob" src="assets/Mobile/Instagram.svg" alt="">
+                </div>
+            
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
 </html>

@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Playfair+Display:wght@900&display=swap&family=Montserrat:wght@500&display=swap');
+
+.navbar-brand{
+    font-size: 67px;
+    font-family: Helvetica;
+    font-weight: bold;
+    color: #fff;
+}
+a:hover{
+    color: #fff;
+}
+.searchbox{
+    background: #ECEFF2;
+    mix-blend-mode: normal;
+    opacity: 0.4;
+    border-radius: 24px;
+    width: 263px;
+    height: 48px;
+    background-image: url(assets/Web/Search.svg);
+    background-repeat: no-repeat;
+    background-position: 216px 15px;  
+}
+
+.mob{
+    display: none;
+}
+.searchbox::placeholder{
+    font-size: 16px;
+    line-height: 24px;
+    color: #19202C;
+    mix-blend-mode: normal;
+    opacity: 0.4;
+    position: absolute;
+    width: 48px;
+    height: 24px;
+    left: 30px;
+    top: calc(50% - 24px/2 - 4px)
+}
+
+.item-count{
+    background: #ECEFF2;
+    opacity: 0.7;
+    border-radius: 100px;
+    width: 24px !important;
+    height: 24px !important;
+    text-align: center;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    
+}
+
+
+.color-ruler{
+    background-image: linear-gradient(#19202C,#37445B);
+    width: 35%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+
+.product-image-web{
+    width: 100%;
+}
+
+.product-image-mob{
+    display: none;
+}
+
+h1{
+    font-family: 'Playfair Display';
+    font-size: 50px;
+    font-weight: 900;
+    line-height: 56px;
+    color: #19202C;
+}
+
+p{
+    font-family: Lato;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: normal;
+    color: #19202C;
+}
+
+.active{
+    opacity: 0.5;
+}
+
+
+.checked{
+    color: orange;
+}
+
+.fa-caret-right{
+    width: 4px;
+    height: 5px;
+    margin: 0 1%;
+}
+
+.votes{
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    text-decoration-line: underline;
+    color: #3F88EB;
+}
+
+.price{
+    font-size: 32px;
+    line-height: 42px;
+    font-weight: 900;
+}
+
+.market-price{
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    opacity: 0.3;
+    text-decoration: line-through;
+    
+}
+
+.btn{
+    border-radius: 100px;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 22px;
+    font-family: Lato;
+    font-style: normal;
+    padding: 2% 8%;
+    width: 241px;
+    height: 56px;
+    margin-right: 2%;
+}
+
+.btn-img{
+    width: 18px;
+    height: 15px;
+    margin-right: 3px;
+}
+
+.like-btn{
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.delivery-info{
+    margin-top: 3%;
+    font-size: 14px;
+    line-height: 17px; 
+}
+
+@media only screen and (max-width:600px) {
+    nav{
+        background-color: #19202C;
+        color: #fff;
+        width: 100vw;   
+        padding-top: 20px !important ;
+    }  
+    .color-ruler{
+        display: none;
+    }
+    .nav-menu{
+        width: 35% !important;
+    }
+    .navbar-brand{            
+        font-size: 24px;
+        line-height: 29px;
+    }
+    .searchbox{
+        display: none;
+    }
+    .hamburger{
+        display: none;
+    }
+    .item-count{
+        
+        width: 15px;
+        height: 15px;
+        border-radius: 62.5px;
+        background: #ECEFF2;
+        text-align: center;
+        font-size: 7.5px;
+        line-height: 11px;
+        color: #fff;
+        position: relative;
+
+    }
+    #product-section{
+        margin: 5% 2%;
+    }
+    .product-image-web{
+        display: none;
+    }
+    .product-image-mob{
+        display: block;
+        margin: auto;
+        margin-bottom: 5%;
+    }
+    h1{
+        font-size: 27px;
+        line-height: 36px;
+        display: flex;
+        align-items: center;
+        margin: 0;
+    }
+    .pages{
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .order-info{
+        width: 100%;
+    }
+    .form-select{
+        width: 96px;
+        height: 43px;
+    }
+    .info-color{
+        margin-right: 2%;
+    }
+    .info-size{
+        margin-right: 2%;
+    }
+    .btns{
+        margin-top: 3%;
+    }
+    .btn{
+        font-weight: 900;
+        font-size: 13.8214px;
+        line-height: 17px;
+        width: 185px;
+        height: 43px;
+        border-radius: 76.5px;
+    }
+    .like-btn{
+        font-size: 12.2857px;
+        line-height: 15px;
+        font-style: normal;
+        font-weight: normal;
+    }
+    .delivery-info{
+        font-size: 12px;
+        line-height: 17px;   
+    }
+    .mob{
+        display: block;
+    }
+    .web{
+        display: none;
+    }
+    .logos{
+        width: 100% !important;
+        margin-bottom: 3%;
+    }
+    .logo-background{
+        border-radius: 50%;
+        background: rgba(189, 187, 187, 0.3);
+    }
+    .logo .web{
+        color: #fff;
+    }
+}
+.logos{
+    display: flex;
+    width: 25%;
+    justify-content: center;
+}
+
+
+.logo-background{
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    text-align: center;
+    background: rgba(80, 79, 79, 0.5);
+    margin: 1%;
+    
+    
+}
+
+.nav-menu{
+    width: 50%;
+}
+
+.form-select{
+    border: 1px solid #EDEDED;
+    border-radius: 21px;
+    box-sizing: border-box;
+    width: 108px;
+    height: 42px;
+    margin-bottom: 5%;
+    display: inline;
+}
+
+.order-info-title{
+    text-align: center;
+    margin-bottom: 4px;
+}
+
+.quantity-info{
+    height:42px;
+    width:108px;
+    display: flex;
+    border: 1px solid #EDEDED;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 21px;
+  }
+
+.quantity-info p{
+    margin: 0;
+}
+.quantity-control{
+    background: none;
+    border: none;
+    font-size: 20px;
+  }
+
+.color{
+    height:42px;
+    width:108px;
+    display: flex;
+    border: 1px solid #EDEDED;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 21px;
+}
+
+.color-option{
+  width:24px;
+  height: 24px;
+  border-radius: 50%;
+}
+
+.black{
+  
+  background: black;
+}
+
+.white{
+    background-color: #F3F3F3; 
+    border: 1px solid #EDEDED;
+}
+.maroon{
+ background: #7A3050; 
+}
+
+.color-option:focus{
+  background-image: url(assets/Web/Check.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50% ;
+}
+
+button{
+  border: 0;
+}
+
+.order-info{
+    width: 80%;
+    margin-bottom: 2%;
+}
