@@ -1,6 +1,5 @@
 let quantity = document.getElementById("quantity").textContent;
 quantity = Number(quantity);
-quantity = quantity + 5;
 document.getElementById("quantity").textContent = quantity;
 
 function minus(){
