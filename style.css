@@ -1,10 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Playfair+Display:wght@900&display=swap&family=Montserrat:wght@500&display=swap');
 
+
+/* Navbar  */
+.navbar{
+    padding-top: -0.5rem !important;
+}
 .navbar-brand{
     font-size: 67px;
     font-family: Helvetica;
     font-weight: bold;
     color: #fff;
+}
+.nav-menu{
+    width: 50%;
 }
 a:hover{
     color: #fff;
@@ -20,10 +28,6 @@ a:hover{
     background-repeat: no-repeat;
     background-position: 216px 15px;  
 }
-
-.mob{
-    display: none;
-}
 .searchbox::placeholder{
     font-size: 16px;
     line-height: 24px;
@@ -36,7 +40,9 @@ a:hover{
     left: 30px;
     top: calc(50% - 24px/2 - 4px)
 }
-
+.search-mob{
+    display: none;
+}
 .item-count{
     background: #ECEFF2;
     opacity: 0.7;
@@ -51,16 +57,12 @@ a:hover{
     
 }
 
+/* Product Specification */
 
-.color-ruler{
-    background-image: linear-gradient(#19202C,#37445B);
-    width: 35%;
-    height: 100vh;
-    position: absolute;
-    top: 0;
-    z-index: -1;
-}
 
+
+
+/* Product Image  */
 .product-image-web{
     width: 100%;
 }
@@ -69,11 +71,13 @@ a:hover{
     display: none;
 }
 
+
+/* Product Details  */
 h1{
     font-family: 'Playfair Display';
     font-size: 50px;
     font-weight: 900;
-    line-height: 56px;
+    line-height: 7vh;
     color: #19202C;
 }
 
@@ -84,22 +88,17 @@ p{
     font-weight: normal;
     color: #19202C;
 }
-
-.active{
-    opacity: 0.5;
-}
-
-
-.checked{
-    color: orange;
-}
-
 .fa-caret-right{
     width: 4px;
     height: 5px;
     margin: 0 1%;
 }
-
+.active{
+    opacity: 0.5;
+}
+.checked{
+    color: orange;
+}
 .votes{
     font-weight: bold;
     font-size: 14px;
@@ -107,13 +106,11 @@ p{
     text-decoration-line: underline;
     color: #3F88EB;
 }
-
 .price{
     font-size: 32px;
     line-height: 42px;
     font-weight: 900;
 }
-
 .market-price{
     font-family: 'Montserrat';
     font-weight: 500;
@@ -123,7 +120,87 @@ p{
     text-decoration: line-through;
     
 }
+/* Order Specifications  */
+.order-info-title{
+    text-align: center;
+    margin-bottom: 4px;
+}
+.order-info{
+    width: 80%;
+    margin-bottom: 2%;
+}
 
+/* Color Circles  */
+.color{
+    height:42px;
+    width:108px;
+    display: flex;
+    border: 1px solid #EDEDED;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 21px;
+    background: #fff;
+}
+
+.color-option{
+  width:24px;
+  height: 24px;
+  border-radius: 50%;
+}
+
+.black{
+  
+  background: black;
+}
+
+.white{
+    background-color: #F3F3F3; 
+    border: 1px solid #EDEDED;
+}
+.maroon{
+ background: #7A3050; 
+}
+
+.color-option:focus{
+  background-image: url(assets/Web/Check.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50% ;
+}
+
+button{
+  border: 0;
+}
+/* Size Options  */
+.form-select{
+    border: 1px solid #EDEDED;
+    border-radius: 21px;
+    box-sizing: border-box;
+    width: 108px;
+    height: 42px;
+    margin-bottom: 5%;
+    display: inline;
+}
+/* Quantity Options */
+.quantity-info{
+    height:42px;
+    width:108px;
+    display: flex;
+    border: 1px solid #EDEDED;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 21px;
+    background: #fff;
+  }
+
+.quantity-info p{
+    margin: 0;
+}
+.quantity-control{
+    background: none;
+    border: none;
+    font-size: 20px;
+}
+/* Buttons  */
 .btn{
     border-radius: 100px;
     font-weight: 900;
@@ -133,7 +210,7 @@ p{
     font-style: normal;
     padding: 2% 8%;
     width: 241px;
-    height: 56px;
+    height: 50px;
     margin-right: 2%;
 }
 
@@ -150,11 +227,47 @@ p{
     font-style: normal;
 }
 
+/* Footer  */
+.logos{
+    display: flex;
+    width: 25%;
+    justify-content: center;
+}
+
+
+.logo-background{
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    text-align: center;
+    background: rgba(80, 79, 79, 0.5);
+    margin: 1%;   
+}
+/* Delivery Info  */
 .delivery-info{
     margin-top: 3%;
     font-size: 14px;
     line-height: 17px; 
 }
+.mob{
+    display: none;
+}
+
+/* Color Ruler  */
+
+.color-ruler{
+    background-image: linear-gradient(#19202C,#37445B);
+    width: 35%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+
+/* Mobile Media Query  */
 
 @media only screen and (max-width:600px) {
     nav{
@@ -174,9 +287,6 @@ p{
         line-height: 29px;
     }
     .searchbox{
-        display: none;
-    }
-    .hamburger{
         display: none;
     }
     .item-count{
@@ -216,6 +326,7 @@ p{
     }
     .order-info{
         width: 100%;
+        justify-content: space-around !important;
     }
     .form-select{
         width: 96px;
@@ -246,7 +357,8 @@ p{
     }
     .delivery-info{
         font-size: 12px;
-        line-height: 17px;   
+        line-height: 17px; 
+        text-align: center;  
     }
     .mob{
         display: block;
@@ -260,111 +372,114 @@ p{
     }
     .logo-background{
         border-radius: 50%;
-        background: rgba(189, 187, 187, 0.3);
+        background: rgba(0, 0, 0, 0.05) !important;
     }
     .logo .web{
         color: #fff;
     }
 }
-.logos{
-    display: flex;
-    width: 25%;
-    justify-content: center;
+
+@media (min-width: 600px) and (max-width:767px){
+    .color-ruler{
+        display: none;
+    }
+    .navbar{
+        background: #19202C;
+        margin-bottom: 2%;
+    }
+    .nav-menu{
+        width: 40%;
+    }
+    .web{
+        display: none;
+    }
+    .searchbox{
+        display: none;
+    }
+    .search-mob{
+        display: block;
+    }
+    .mob{
+        display: block;
+    }
+    .product-image-web{
+        display: none;
+    }
+    .product-image-mob{
+        display: block;
+        height: 60%;
+        margin: 5% auto;
+    }
+    h1{
+        font-size: 44px;
+    }
+    .logos{
+        width: 100% !important;
+        margin: 30% auto 3%;
+    }
+    .logo-background{
+        border-radius: 50%;
+        background: rgba(0, 0, 0, 0.05) !important;
+    }
+    .delivery-info{
+        font-size: 14px;
+        line-height: 17px; 
+        text-align: center; 
+        padding-bottom: 20%; 
+    }
+    p{
+        font-size: 18px;
+        line-height: 27px;
+    }
+    .order-info{
+        margin: 2% auto;
+        justify-content: space-around !important;
+    }
+    .order-info-title{
+        font-size: 16px;
+    }
+    .btn{
+        font-size: 14px;
+        height: 45px;
+    }
+
 }
 
-
-.logo-background{
-    width: 36px;
-    height: 36px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 20px;
-    text-align: center;
-    background: rgba(80, 79, 79, 0.5);
-    margin: 1%;
+@media (min-width: 768px) and (max-width: 991px){
     
-    
-}
-
-.nav-menu{
-    width: 50%;
-}
-
-.form-select{
-    border: 1px solid #EDEDED;
-    border-radius: 21px;
-    box-sizing: border-box;
-    width: 108px;
-    height: 42px;
-    margin-bottom: 5%;
-    display: inline;
-}
-
-.order-info-title{
-    text-align: center;
-    margin-bottom: 4px;
-}
-
-.quantity-info{
-    height:42px;
-    width:108px;
-    display: flex;
-    border: 1px solid #EDEDED;
-    justify-content: space-around;
-    align-items: center;
-    border-radius: 21px;
-  }
-
-.quantity-info p{
-    margin: 0;
-}
-.quantity-control{
-    background: none;
-    border: none;
-    font-size: 20px;
-  }
-
-.color{
-    height:42px;
-    width:108px;
-    display: flex;
-    border: 1px solid #EDEDED;
-    justify-content: space-around;
-    align-items: center;
-    border-radius: 21px;
-}
-
-.color-option{
-  width:24px;
-  height: 24px;
-  border-radius: 50%;
-}
-
-.black{
-  
-  background: black;
-}
-
-.white{
-    background-color: #F3F3F3; 
-    border: 1px solid #EDEDED;
-}
-.maroon{
- background: #7A3050; 
-}
-
-.color-option:focus{
-  background-image: url(assets/Web/Check.svg);
-  background-repeat: no-repeat;
-  background-position: 50% 50% ;
-}
-
-button{
-  border: 0;
-}
-
-.order-info{
-    width: 80%;
-    margin-bottom: 2%;
+    h1{
+        font-size: 40px;
+        line-height: 4vh;
+    }
+    .price{
+        font-size: 20px;
+    }
+    .p{
+        line-height: 20px;
+    }
+    .order-info{
+        align-items: baseline;
+    }
+    .order-info-title{
+        line-height: 18px;
+    }
+    .quantity-info{
+        height: 36px;
+        width: 100px;
+    }
+    .form-select{
+        height: 36px;
+        width: 100px;
+        margin-right: 2%;
+    }
+    .color{
+        height: 36px;
+        width: 100px;
+        margin-right: 2%;
+    }
+    .btn{
+        font-size: 12px;
+        width: 150px;
+        height: 40px;
+    }
 }
