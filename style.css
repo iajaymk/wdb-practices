@@ -290,6 +290,9 @@ button{
     .searchbox{
         display: none;
     }
+    .search-mob{
+        display: block !important;
+    }
     .item-count{
         
         width: 15px;
