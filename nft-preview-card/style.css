@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+body{
+    background: hsl(217, 54%, 11%);
+    font-family: 'Outfit';
+}
+.nft-preview{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.card{
+    width: 25%;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 20px;
+}
+.nft-img{
+    width: 80%;
+    margin: 10% 10% 0 10%;
+    border-radius: 10px;
+}
+.description{
+    width: 80%;
+    margin: auto;
+}
+h3{
+    color: hsl(0, 0%, 100%);
+    margin-bottom: 0;
+    font-weight: 600;
+}
+.nft-description{
+    font-weight: 300;
+    color: hsl(215, 51%, 70%);
+}
+hr{
+    border-color: hsl(215, 32%, 27%);
+    border-bottom:0 ;
+}
+.creator-details{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 5%;
+}
+.prof-pic{
+    width: 10%;
+    height: 10%;
+    border: 2px solid hsl(0, 0%, 100%);
+    border-radius: 100%;
+}
+.creator-name{
+    margin-left: 2%;
+    color: hsl(215, 51%, 70%);
+}
+span{
+    color: hsl(0, 0%, 100%);
+}
+.offer-detail{
+    display: flex;
+    justify-content: space-between;
+}
+.price-section{
+    display: flex;
+    align-items: center;
+    color: hsl(178, 100%, 50%);
+}
+.days-left{
+    display: flex;
+    align-items: center;
+    color: hsl(215, 51%, 70%);
+}
+span:hover{
+    color: hsl(178, 100%, 50%);
+}
+h3:hover{
+    color: hsl(178, 100%, 50%);
+}
+.nft-img:hover{
+    background: transparent url('images/icon-view.svg');
+    background: hsl(178, 100%, 50%);
+}

@@ -6,14 +6,18 @@ body{
     font-family: 'Red Hat Display';
     background-color: hsl(225, 100%, 94%);
 }
-
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
 .order-component{
     background-color: #fff;
     border-radius: 10px;
     width: 30%;
     margin: auto;
     text-align: center;
-    margin-top: 5%;
 }
 img{
     width: 100%;
