@@ -1,11 +1,47 @@
 body{
     text-align: center;
-}
-
-h1{
-    font-size: 5em;
+    background-color: lemonchiffon;
 }
 
 h2{
     font-size: 5em;
+    color: #00C897;
 }
+
+h1{
+    font-size: 5em;
+    color: #019267;
+
+}
+#increment-btn{
+    width: 15rem;
+    height: 3em;
+    font-size: 16px;
+    transition: 0.5s;
+    background-size: 200% auto;   
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    color: #eee;
+    border: 0;
+    background-image: linear-gradient(to right, #f6d365 0%, #fda085 51%, #f6d365 100%);
+}
+#increment-btn:hover{
+  background-position: right center; 
+}
+
+#save-btn {
+    width: 15rem;
+    height: 3em;
+    font-size: 16px;
+    transition: 0.5s;
+    background-size: 200% auto;   
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    color: #eee;
+    border: 0;
+    background-image: linear-gradient(to right, #84fab0 0%, #8fd3f4 51%, #84fab0 100%);
+  }
+  #save-btn:hover{
+    background-position: right center; 
+  }
+   
