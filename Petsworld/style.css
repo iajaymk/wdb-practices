@@ -192,4 +192,7 @@ a{
     .feedbackmsg{
         font-size: 1.5em;
     }
+    .feature{
+        flex-direction: column;
+    }
 }
