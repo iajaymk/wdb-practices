@@ -1,0 +1,53 @@
+.body{
+    font-size: "Poppins",Helvetica;
+}
+.navbar-brand{
+    font-weight: 700;
+}
+.intro{
+    background-color: #f7f5fd;
+}
+.about{
+    padding: 7%;
+    justify-content: center;
+    align-items: center;
+}
+.home-img{
+    width: 100%;
+}
+.intro-title{
+    font-weight: 600;
+    font-size: 5em;
+}
+.intro-moto{
+    font-weight: 400;
+    opacity: 0.5;
+    font-size: 2em;
+}
+@media (max-width:500px){
+    .userbtn{
+        display: none;
+    }
+    .about{
+        flex-direction: column;
+        padding: 7%;
+    }
+    .intro-description{
+        margin: 11% 0 11% 0;
+        text-align: center;
+    }
+}
+@media (min-width:501px) and (max-width:1024px){
+    .userbtn{
+        display: none;
+    }
+    .about{
+        flex-direction: column;
+        padding: 8%;
+        align-items: center;
+        text-align: center;
+    }
+    .intro-description{
+        margin: 11% 0 11% 0;
+    }
+}
