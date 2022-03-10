@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body{
+
+    font-family: 'Roboto';
+}
+header{
+    padding: 2% 7%;
+}
+.header-title{
+    font-size: 2em;
+}
+.introduction{
+    height: 100%;
+    text-align: center;
+    padding: 7%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.intro-title{
+    font-weight: 400;
+    font-size: 3em;
+}
+.intro-subtitle{
+    opacity: 0.5;
+    font-size: revert;
+    font-size: x-large;
+}
+.prof-pic{
+    border-radius: 50%;
+    width: 200px;
+}
+.works{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7%;
+    text-align: center;
+}
+.works-title{
+    font-weight: 400;
+    font-size: 3em;
+}
+.project{
+    height: 100%;
+    border: 2px solid var(--clr-gray-200);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    transition: 250ms ease-in-out;
+    box-shadow: rgb(149 157 165 / 20%) 0 8px 24px;
+    margin: 1%;
+}
+.project-img{
+    width: 100%;
+}
+.project-title{
+    padding: 2%;
+}
+.project-links{
+    text-decoration: none;
+    color: #fff;
+    border: 2px solid var(--clr-gray-200);
+    border-radius: 0.5rem;
+    box-shadow: rgb(149 157 165 / 20%) 0 8px 24px;
+    
+}
+.projects{
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
