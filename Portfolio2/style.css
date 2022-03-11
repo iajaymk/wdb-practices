@@ -9,6 +9,7 @@ header{
 }
 .header-title{
     font-size: 2em;
+    font-weight: 800;
 }
 .introduction{
     height: 100%;
@@ -30,6 +31,7 @@ header{
 .prof-pic{
     border-radius: 50%;
     width: 200px;
+    margin-bottom: 13%;
 }
 .works{
     display: flex;
@@ -77,6 +79,9 @@ footer a{
 }
 footer {
     padding: 7%;
+}
+footer h1{
+    font-size: 1.25em;
 }
 footer p{
     opacity: 0.75;
