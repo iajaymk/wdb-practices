@@ -53,6 +53,7 @@ header{
 }
 .project-img{
     width: 100%;
+    border-radius: 10px ;
 }
 .project-title{
     padding: 2%;
@@ -69,4 +70,18 @@ header{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+}
+footer a{
+    text-decoration: none;
+    color: #000;
+}
+footer {
+    padding: 7%;
+}
+footer p{
+    opacity: 0.75;
+}
+svg{
+    width: 40px;
+    margin-right: 20px;
 }
