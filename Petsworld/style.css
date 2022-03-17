@@ -194,5 +194,7 @@ a{
     }
     .feature{
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }
