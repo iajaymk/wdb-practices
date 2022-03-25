@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+}
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#header-img{
+    height: 100px;
+    width: 300px;
+}
+
+
+#form{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 60%;
+    margin: auto;
+}
+input{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
