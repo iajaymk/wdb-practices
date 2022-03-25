@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Source+Sans+Pro&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+body{
+    background-image: url('assets/images/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
+    font-family: 'Merriweather', Georgia, serif;
+    font-size: 16px;
+    line-height: 38px;
+    color: #212931;
+}
+
+.overlay{
+    position: absolute;
+    background-color: #1e252d;
+    opacity: 0.8;
+    width: 100%;
+    height: 100%;
+}
+
+h1{
+    font-family: "Source Sans Pro";
+    font-size: 80px;
+    line-height: 80px;
+    font-style: normal;
+    font-weight: 900;
+}
+
+header{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    color: #fff;
+    padding: 20rem 20rem 0;
+}
+header a{
+    color: #fff;
+    text-decoration:none;
+    border-bottom: 1px dotted #909498;
+}
+
+header p{
+    text-align: center;
+}
+.header-arrow a{
+    border-bottom: 0;
+}
