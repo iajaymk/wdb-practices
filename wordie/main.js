@@ -1,17 +1,16 @@
-const wordLength = 5
-const chances = 6
+const tiles = document.querySelector('.input')
+const keyboard = document.querySelector('.keyboard')
 
-const board = document.getElementById("board")
+const keys = [
+    'Q','W','E','R','T','Y','U','I','O','P',
+    'A','S','D','F','G','H','J','K','L','/',
+    'ENTER','Z','X','C','V','B','N','M'
+]
 
-
-for (let i=0; i< chances; i++){
-    const row = document.createElement("div")
-    board.appendChild(row)
-    
-    for(let j=0; j< wordLength; j++){
-        const inputEl = document.createElement("input")
-        inputEl.setAttribute("maxlength",1)
-        board.appendChild(inputEl)
-    }
-}
-
+keys.forEach(key => {
+    const buttonElement = document.createElement('button')
+    buttonElement.textContent = key
+    buttonElement.setAttribute('id',key)
+    buttonElement.addEventListener('click',handleclick())
+    keyboard.append(buttonElement)
+});

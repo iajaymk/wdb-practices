@@ -1,20 +1,34 @@
-body{
-    margin: 0;
-    padding: 0;
+*{
+    color: #000;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.flex{
+body{
+    background: #FFF;
+}
+
+.title{
+    text-align: center;
+    width: 510px;
+    border-bottom: solid 1px #3a3a3e;
+}
+
+.container{
+    height: 90vh;
     display: flex;
     flex-direction: column;
-    align-items: center;  
+    justify-content: space-between;
+    align-items: center;
 }
 
-input{
-    height: 50px;
-    width: 50px;
-    margin: 0.1em;
-    text-align: center;
-    font-size: 2em;
-    text-transform: uppercase;
+.input-container{
+    width: 330px;
+    margin-bottom: 30px;
+    background: yellow;
 }
 
+.keyboard{
+    width: 510px;
+    display: flex;
+    flex-wrap: wrap;
+}
