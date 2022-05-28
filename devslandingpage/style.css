@@ -1,4 +1,79 @@
+body{
+    background-color: azure;
+}
 header{
     position: fixed;
     top: 0;
+    display: flex;
+    background-color: azure;
+    padding: 2% 10%;
+    width: 100%;
+}
+#header-img{
+    height: 50px;
+    width: 50px;
+}
+#header-title{
+    margin: auto 15%;  
+}
+#nav-items{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.nav-link{
+    text-decoration: none;
+}
+section{
+    margin-top: 10%;
+    text-align: center;
+}
+#hero{
+    padding: 10%;
+}
+#hero h1{
+    font-size: 38px;
+}
+#features{
+    padding: 10%;
+}
+#features h1{
+    font-size: 40px;
+}
+#features p{
+    font-size: 25px;
+}
+.logo{
+    height: 100px;
+}
+#attendclasses{
+    padding: 10%;
+}
+footer{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700px;
+}
+
+
+@media (max-width:769px){
+    iframe{
+        width: 300px;
+        height: 200px;
+    }
+    header{
+        width: 100%;
+    }
+    #header-title{
+        margin: auto 11% auto 6%;
+    }
+    #nav-items{
+        display: none;
+    }
+    #header-img{
+        width: 35px;
+        height: 35px;
+    }
+
 }
