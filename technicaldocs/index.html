@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <main id="main-doc">
+
+
+        <section class="main-section" id="introduction">
+            <header>Introduction</header>
+            <article>
+                <p>Django was invented to meet fast-moving newsroom deadlines, while satisfying the tough requirements of experienced web developers.</p>
+            </article>
+        </section>
+
+
+        <section class="main-section" id="overview">
+            <header>Overview</header>
+            <article>
+                <h2>Why Django?</h2>
+                <p>With Django, you can take web applications from concept to launch in a matter of hours. Django takes care of much of the hassle of web development, so you can focus on writing your app without needing to reinvent the wheel. It’s free and open source.</p>
+                <h2>Ridiculosly fast</h2>
+                <p>Django was designed to help developers take applications from concept to completion as quickly as possible.</p>
+                <h2>Fully loaded.</h2>
+                <p>Django includes dozens of extras you can use to handle common web development tasks. Django takes care of user authentication, content administration, site maps, RSS feeds, and many more tasks — right out of the box.</p>
+                <h2>Reassuringly secure.</h2>
+                <p>Django takes security seriously and helps developers avoid many common security mistakes, such as SQL injection, cross-site scripting, cross-site request forgery and clickjacking. Its user authentication system provides a secure way to manage user accounts and passwords.</p>
+                <h2>Exceedingly scalable.</h2>
+                <p>Some of the busiest sites on the planet use Django’s ability to quickly and flexibly scale to meet the heaviest traffic demands.</p>
+                <h2>Incredibly versatile.</h2>
+                <p>Companies, organizations and governments have used Django to build all sorts of things — from content management systems to social networks to scientific computing platforms.</p>
+            </article>
+        </section>
+
+
+        <section class="main-section" id="install_django">
+            <header>Install Django</header>
+            <article>
+                <p>You’ve got three options to install Django:</p>
+                <ul>
+                    <li>
+                        Install an official release. This is the best approach for most users.
+                    </li>
+                    <li>
+                        Install a version of Django provided by your operating system distribution.
+                    </li>
+                    <li>
+                        Install the latest development version. This option is for enthusiasts who want the latest-and-greatest features and aren’t afraid of running brand new code. You might encounter new bugs in the development version, but reporting them helps the development of Django. Also, releases of third-party packages are less likely to be compatible with the development version than with the latest stable release.
+                    </li>
+                </ul>
+                <h2>Install official release with pip</h2>
+                <p>
+                    This is the recommended way to install Django.
+                    <ol>
+                        <li>
+                            Install pip. The easiest is to use the standalone pip installer. If your distribution already has pip installed, you might need to update it if it’s outdated. If it’s outdated, you’ll know because installation won’t work.
+                        </li>
+                        <li>
+                            Take a look at venv. This tool provides isolated Python environments, which are more practical than installing packages systemwide. It also allows installing packages without administrator privileges. The contributing tutorial walks through how to create a virtual environment.
+                        </li>
+                        <li>
+                            After you’ve created and activated a virtual environment, enter the command:
+                            
+                        </li>
+                        <p>
+
+                    <code>
+                        $ python -m pip install Django
+                    </code>
+                        </p>
+                    </ol>
+                </p>
+            </article>
+        </section>
+
+
+        <section class="main-section" id="creating_a_project">
+            <header>Creating a project</header>
+            <article>
+                <p>
+                    If this is your first time using Django, you’ll have to take care of some initial setup. Namely, you’ll need to auto-generate some code that establishes a Django project – a collection of settings for an instance of Django, including database configuration, Django-specific options and application-specific settings.
+
+                    From the command line, cd into a directory where you’d like to store your code, then run the following command:
+                    
+                </p>
+                <code>
+                    $  django-admin startproject mysite
+                </code>
+                <h2>The development server</h2>
+                <p>
+                    Let’s verify your Django project works. Change into the outer mysite directory, if you haven’t already, and run the following commands:
+                    
+                </p>
+                <code>
+                    $ python manage.py runserver
+                </code>
+                <h2>Creating the Polls app</h2>
+                <p>
+                    Now that your environment – a “project” – is set up, you’re set to start doing work.
+                </p>
+                <p>
+                    Each application you write in Django consists of a Python package that follows a certain convention. Django comes with a utility that automatically generates the basic directory structure of an app, so you can focus on writing code rather than creating directories.
+                </p>
+                <p>
+                    Your apps can live anywhere on your Python path. In this tutorial, we’ll create our poll app in the same directory as your manage.py file so that it can be imported as its own top-level module, rather than a submodule of mysite.
+                </p>
+                <p>
+                    To create your app, make sure you’re in the same directory as manage.py and type this command:
+                </p>
+                <code>
+                    $ python manage.py startapp polls
+                </code>
+            </article>
+        </section>
+
+
+
+        <section class="main-section" id="write_your_first_view">
+            <header>Write your first view</header>
+            <article>
+                <p>Let’s write the first view. Open the file polls/views.py and put the following Python code in it:</p>
+                <code>
+                    from django.http import HttpResponse
+
+
+                    def index(request):
+                        return HttpResponse("Hello, world. You're at the polls index.")
+                </code>
+                <p>
+                    In the polls/urls.py file include the following code:
+                </p>
+                <code>
+                    from django.urls import path
+
+                    from . import views
+
+                    urlpatterns = [
+                        path('', views.index, name='index'),
+                    ]
+                </code>
+                <p>
+                    The next step is to point the root URLconf at the polls.urls module. In mysite/urls.py, add an import for django.urls.include and insert an include() in the urlpatterns list, so you have:
+                </p>
+                <code>
+                    from django.contrib import admin
+                    from django.urls import include, path
+
+                    urlpatterns = [
+                        path('polls/', include('polls.urls')),
+                        path('admin/', admin.site.urls),
+                    ]
+                </code>
+                <p>
+                    You have now wired an index view into the URLconf. Verify it’s working with the following command:
+                </p>
+                <code>
+                    $ python manage.py runserver
+                </code>
+            </article>
+        </section>
+    </main>
+
+
+    <nav id="navbar">
+        <header>Django Docs</header>
+        <a href="#introduction" class="nav-link">Introduction</a>
+        <a href="#overview" class="nav-link">Overview</a>
+        <a href="#install_django" class="nav-link">Install Django</a>
+        <a href="#creating_a_project" class="nav-link">Creating a project</a>
+        <a href="#write_your_first_view" class="nav-link">Write your first view</a>
+    </nav>
+
+</body>
+</html>
