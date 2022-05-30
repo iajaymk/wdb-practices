@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+  nav{
+    background: #14C38E;
+    padding: 5%;
+    position: fixed;
+    top: 0;
+  }
+  #navbar{
+    width: 100%;
+    
+  }
+  
+  #navbar ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  #navbar a{
+  
+    color: #187498;
+    text-decoration: none;
+  }
+  #welcome-section{
+    text-align:center;
+    padding: 60% 10%;
+    background:#00FFAB;
+  }
+  #projects{
+    text-align:center;
+    padding: 20% 10%;
+    background:#00FFAB;
+  }
+  #projects h2{
+    padding-bottom: 20%;
+  }
+  .project-tile{
+    background:#E3FCBF;
+    padding: 10% 5%;
+    line-height:2;
+    font-size: 1.25rem;
+  }
+  .project-tile a{
+    text-decoration: none;
+    color:#187498;
+  }
+  #contact_me{
+    background:#00FFAB;
+    text-align:center;
+    padding: 2%;
+  }
+  #contact_me a{
+    text-decoration: none;
+    color:#CC704B;
+  }
+  
+  footer{
+    background: #14C38E;
+    text-align: center;
+  }
+  footer p{
+    font-size: 1.05rem;
+    padding: 2%
+  }
+  
+  hr{
+    background: #14C38E;
+  }
+  
+  @media (max-width: 768px){
+    hr{
+      display: none;
+    }
+  }
