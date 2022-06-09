@@ -2,3 +2,24 @@
     margin: 0;
     padding: 0;
 }
+
+body{
+    display: flex;
+    width: 100vw;
+    background-color: black;
+}
+
+aside{
+    width: 17%;
+    height: 100vh;
+    background-color: #1b2732;
+    color: #f9feff;
+}
+.messages{
+    width: 28%;
+    background-color: red;
+}
+.detail{
+    width: 60%;
+    background-color: green;
+}
