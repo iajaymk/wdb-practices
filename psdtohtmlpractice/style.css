@@ -6,20 +6,85 @@
 body{
     display: flex;
     width: 100vw;
-    background-color: black;
+    font-family: 'Helvetica';
 }
 
-aside{
+#sidebar{
     width: 17%;
     height: 100vh;
     background-color: #1b2732;
     color: #f9feff;
 }
+
+.profile-area{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+    background:#000 url('images/erichoffman.jpg');
+    position: relative;
+}
+
+.profile-details{
+    text-align: center;
+    z-index: 1;
+}
+
+.compose-icon{
+    width: 20px;
+    height: 20px;
+}
+
+.compose-button{
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid red;
+    padding: 5px;
+}
+
+.image-overlay{
+    height: 100%;
+    width: 100%;
+    background-color: #1b2732;
+    opacity: 0.8;
+    position: absolute;
+}
+
+.aside-links{
+    color: white;
+    text-decoration: none;
+}
+
+.sidebar-footer{
+    background-color: #101b25;
+}
+
+/* #################################################################### Messages #################################################################### */
 .messages{
     width: 28%;
-    background-color: red;
+    background-color: #fafafa;
 }
+
+.mail:hover {
+    background-color: #ff421d;
+    color: white;
+}
+
+
+
+
+/* #################################################################### Detail View #################################################################### */
 .detail{
     width: 60%;
-    background-color: green;
+}
+
+.send-button{
+    background-color: #ff421d;
+    color: white;
+    border: 0;
+    padding: 5px;
 }
