@@ -37,27 +37,29 @@ aside{
 }
 
 .profile-position{
-    margin: 0 0 5% 0;
+    margin: 0 0 10% 0;
     color: #97a7b5;
+    font-size: 14px;
 }
 
 .compose-button{
     border: 1px solid red;
-    padding: 5%;
+    padding: 5% 3px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     text-decoration: none;
 }
 
 .compose-button span{
     color: white;
-    font-size: 14px;
+    font-size: 12px;
+    font-weight: bold;
 }
 
-.compose-icon{
+.compose-button img{
     width: 20px;
-    height: 10px;
+    height: 20px;
 }
 
 .image-overlay{
@@ -65,7 +67,7 @@ aside{
     position: absolute;
     width: 17%;
     height: 23%;
-    opacity: 0.7;
+    opacity: 0.8;
 }
 
 .categories{
@@ -79,7 +81,15 @@ aside{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 7% 12%;
+    padding: 7% 10%;
+    font-size: 14px;
+}
+
+.number{
+    border: 1px solid #585858;
+    padding: 1% 3%;
+    border-radius: 50%;
+    text-align: center;
 }
 
 .aside-links{
@@ -87,15 +97,24 @@ aside{
     color: white;
 }
 
-.aside-categories:hover{
+.active{
     background-color: white;
     border-left: 2px solid #ff421d;
     color: #1b2732;
 }
 
-.aside-categories:hover .aside-links{
+.active .aside-links{
     color: #101b25;
 }
+
+.active .number{
+    background-color: #ff421d;
+    color: white;
+    border: 0;
+
+    padding: 1% 3%;
+}
+
 
 .sidebar-footer{
     display: flex;
@@ -115,15 +134,23 @@ aside{
 /* ########################################################## Inbox ########################################################## */
 .messages{
     background-color: #fafafa;
-    height: 100%;
+    height: 97%;
     width: 26%;
-    padding: 1% 2%;
+    padding: 1%;
 }
 
 .message-categories{
-    padding: 2% 0;
-    /* overflow-x: scroll; */
+    padding: 4% 0;
+    border-bottom: 1px solid #d0d0d0;
+    margin-bottom: 4%;
 }
+
+.selected{
+    color: black !important;
+    border-bottom: 2px solid #ff421d;
+    padding: 4%;
+}
+
 .message-categories a{
     text-decoration: none;
     color: #c0c0c0;
@@ -136,12 +163,26 @@ aside{
     position: relative;
     height: 95%;
 }
+.all-messages::-webkit-scrollbar {
+    width: 3px;
+    border-radius: 50%;
+    margin-left: 2px;
+}
+   
+.all-messages::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+}
+   
+.all-messages::-webkit-scrollbar-thumb {
+    background-color: #ff421d;
+}
 
 .message-list{
     list-style: none;
     width: 100%;
-    padding: 0;
-    margin: 0%;
+    padding-right: 7%;
+    padding-left: 0;
+    margin: 0;
 }
 
 .message a{
@@ -149,8 +190,28 @@ aside{
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    margin: 3% 0;
+    margin: 1% 0;
     line-height: 1.5;
+    padding: 2% 5%;
+}
+
+.opened{
+    background-color: #ff421d;
+    color: white !important;
+    border-radius: 5px;
+    
+}
+
+.opened .author-name{
+    color: white;
+}
+
+.opened .message-content{
+    color: white;
+}
+
+.opened .date{
+    color: white;
 }
 
 .author-name{
@@ -181,7 +242,7 @@ aside{
 /* ################################################# Message Detail View ################################################# */
 
 .detail-view{
-    width: 51%;
+    width: 57%;
     height: 100%;
     padding: 1% 3%;
 }
@@ -191,6 +252,7 @@ aside{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 2% 0;
 }
 
 .detail-view-nav img{
