@@ -1,107 +1,47 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rochester&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    background: url(images/wallpaper.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
 
 body{
-
-    font-family: 'Roboto';
-}
-header{
-    padding: 2% 7%;
-    position: fixed;
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-}
-.header-title{
-    font-size: 2em;
-    font-family: 'Rochester';
-}
-nav{
-    display: flex;
-}
-nav ul{
-    list-style-type: none;
-    display: flex;
-    justify-content: space-between;
     width: 100%;
 }
 
-.introduction{
-    height: 100%;
-    text-align: center;
-    padding: 7%;
+#dock{
+    background: rgba(0,0,0,.5);
     display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.intro-title{
-    font-weight: 400;
-    font-size: 3em;
-}
-.intro-subtitle{
-    opacity: 0.5;
-    font-size: revert;
-    font-size: x-large;
-}
-.prof-pic{
-    border-radius: 50%;
-    width: 200px;
-    margin-bottom: 13%;
-}
-.works{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 7%;
-    text-align: center;
-}
-.works-title{
-    font-weight: 400;
-    font-size: 3em;
-}
-.project{
-    height: 100%;
-    border: 2px solid var(--clr-gray-200);
-    border-radius: 0.5rem;
-    padding: 1rem;
-    transition: 250ms ease-in-out;
-    box-shadow: rgb(149 157 165 / 20%) 0 8px 24px;
     margin: 1%;
-}
-.project-img{
-    width: 100%;
-    border-radius: 10px ;
-}
-.project-title{
-    padding: 2%;
-}
-.project-links{
-    text-decoration: none;
-    color: #fff;
-    border: 2px solid var(--clr-gray-200);
-    border-radius: 0.5rem;
-    box-shadow: rgb(149 157 165 / 20%) 0 8px 24px;
-    
-}
-.projects{
-    flex-wrap: wrap;
-    justify-content: center;
+    width: 98%;
+    border-radius: 15px 15px;
+    padding: 10px 1%;
     align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 0;
 }
-footer a{
-    text-decoration: none;
-    color: #000;
+
+.apps img{
+    width: 50px;
+    height: 50px;
+    padding: 1% 0;
 }
-footer {
-    padding: 7%;
-}
-footer h1{
-    font-size: 1.25em;
-}
-footer p{
-    opacity: 0.75;
-}
-svg{
-    width: 40px;
-    margin-right: 20px;
+
+@media (max-length:374px){
+    .app{
+        padding: 50%;
+    }
+    .app img{
+        width: 30px;
+        height: 30px;
+        padding: 1%;
+    }
 }
