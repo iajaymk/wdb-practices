@@ -1,6 +1,11 @@
 *{
     box-sizing: border-box;
 }
+
+*::after,*::before{
+    box-sizing: border-box;
+}
+
 body{
     margin: 0;
     width: 100%;
@@ -199,7 +204,19 @@ aside{
     background-color: #ff421d;
     color: white !important;
     border-radius: 5px;
-    
+}
+
+.opened::after{
+    content: '';
+    width: 0;
+    height: 0;
+    position: relative;
+    border-top:5px solid #ff421d ;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    top:7px;
+    right: -23px;
+    transform: rotate(-90deg);    
 }
 
 .opened .author-name{
@@ -230,13 +247,6 @@ aside{
     color: #adadad;
     font-size: 10px;
 }
-
-
-
-
-
-
-
 
 
 /* ################################################# Message Detail View ################################################# */
