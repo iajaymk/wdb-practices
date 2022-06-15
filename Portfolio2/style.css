@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rochester&display=swap');
 
 body{
 
@@ -6,11 +7,25 @@ body{
 }
 header{
     padding: 2% 7%;
+    position: fixed;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
 }
 .header-title{
     font-size: 2em;
-    font-weight: 800;
+    font-family: 'Rochester';
 }
+nav{
+    display: flex;
+}
+nav ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
 .introduction{
     height: 100%;
     text-align: center;
