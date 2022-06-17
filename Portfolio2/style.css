@@ -5,10 +5,30 @@
 }
 
 body{
-    padding: 2rem;
     width: 100%;
-    background-color: #0093E9;
+    height: 100%;
+    padding: 2rem;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fcd8ad;
     background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+    font-family: 'Helvetica';
+}
+
+
+body::-webkit-scrollbar {
+    width: 0.5em;
+}
+   
+body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 7px #0093E9;
+}
+   
+body::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
 }
 
 #container{
@@ -19,7 +39,7 @@ body{
     padding: 3rem;
     overflow-y: scroll;
     scroll-behavior: smooth;
-    background: rgba( 120, 177, 255, 0.25 );
+    background: rgba( 255, 255, 255, 0.25 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 4px );
     -webkit-backdrop-filter: blur( 4px );
@@ -35,16 +55,20 @@ body{
     margin-block: 0.5rem ;
     flex-flow: wrap;
     justify-content: center;
+    margin-bottom: 1rem;
 }
 
 .header-links{
     text-decoration: none;
+    color: #575a69;
+    font-size: 20px;
+    padding: 5px;
 }
 
 #main-section{
     display: flex;
     flex-flow: row-reverse;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 #ajay-img{
@@ -53,17 +77,81 @@ body{
     border-radius: 50%;
 }
 
+.main-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    text-align: center;
+}
 
-@media (max-width:375px){
+.maintext-heading{
+    margin: 1.5rem 0;
+    font-size: 2rem;
+    text-align: left;
+}
+
+.name{
+    background-image: linear-gradient(to right, #1FA2FF 0%, #12D8FA 51%, #1FA2FF 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+}
+
+.position{
+    background-color: #0093E9;
+    background-image: linear-gradient(#f3ec78, #af4261);
+    background-image: conic-gradient(#f3ec78, #af4261);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+    text-align: center;
+}
+
+.maintext-subheading{
+    font-size: 16px;
+    color: #1b1516;
+}
+
+.contact-button{
+    padding: 0.75rem;
+    border: 0;
+    border-radius: 0.5rem;
+    color: #000;
+    font-size: 1rem;
+    margin: 1rem 0;
+    width: fit-content;
+    background-image: linear-gradient(to right, #1FA2FF 0%, #12D8FA 51%, #1FA2FF 100%);
+}
+
+@media (max-width:576px){
     #main-section{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-    
+
     #ajay-img{
         width: 240px;
         height: 240px;
+    }
+
+    .main-text{
+        align-items: center;
+    }
+
+    .maintext-heading{
+        text-align: center;
+    }
+
+    .maintext-subheading{
+        font-size: 20px;
+        line-height: 1.5;
+        text-align: center;
     }
 }
