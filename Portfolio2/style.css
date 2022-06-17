@@ -66,6 +66,16 @@ body{
     padding: 5px;
 }
 
+.connect-button{
+    padding: 0.75rem;
+    border: 0;
+    border-radius: 0.5rem;
+    color: #000;
+    margin: 1rem 0;
+    width: fit-content;
+    background-image: linear-gradient(to right, #1FA2FF 0%, #12D8FA 51%, #1FA2FF 100%);
+}
+
 #main-section{
     display: flex;
     flex-flow: row-reverse;
@@ -129,17 +139,72 @@ body{
     background-image: linear-gradient(to right, #1FA2FF 0%, #12D8FA 51%, #1FA2FF 100%);
 }
 
-@media (max-width:576px){
+@media only screen and (max-width:483px){
+    #header{
+        justify-content: flex-end;
+    }
+
+    .connect-button{
+        margin: 0;
+        padding: 5px;
+    }
+
     #main-section{
-        display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
+        justify-content: center;
     }
 
     #ajay-img{
         width: 240px;
         height: 240px;
+    }
+
+    .main-text{
+        align-items: center;
+    }
+
+    .maintext-heading{
+        text-align: center;
+    }
+}
+
+@media (min-width:484px) and (max-width: 569px){
+    .header-links{
+        font-size: 15px;
+    }
+
+    .connect-button{
+        padding: 10px;
+    }
+
+    #main-section{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #ajay-img{
+        width: 240px;
+        height: 240px;
+    }
+
+    .main-text{
+        align-items: center;   
+    }
+
+    .maintext-heading{
+        text-align: center;
+    }
+
+}
+
+@media (min-width: 570px) and (max-width:899px){
+    #main-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .main-text{
@@ -161,3 +226,4 @@ body{
         margin: 0;
     }
 }
+
