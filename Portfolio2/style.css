@@ -4,44 +4,66 @@
     padding: 0;
 }
 
-html{
-    background: url(images/wallpaper.jpg) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
 body{
+    padding: 2rem;
     width: 100%;
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
 }
 
-#dock{
-    background: rgba(0,0,0,.5);
+#container{
+    width: 100%;
+    height: 100%;
+    max-width: 70rem;
+    border-radius: 1rem;
+    padding: 3rem;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    background: rgba( 120, 177, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    
+}
+
+#header{
     display: flex;
-    margin: 1%;
-    width: 98%;
-    border-radius: 15px 15px;
-    padding: 10px 1%;
     align-items: center;
+    column-gap: 0.5rem;
+    margin-block: 0.5rem ;
+    flex-flow: wrap;
+    justify-content: center;
+}
+
+.header-links{
+    text-decoration: none;
+}
+
+#main-section{
+    display: flex;
+    flex-flow: row-reverse;
     justify-content: space-between;
-    position: fixed;
-    bottom: 0;
 }
 
-.apps img{
-    width: 50px;
-    height: 50px;
-    padding: 1% 0;
+#ajay-img{
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
 }
 
-@media (max-length:374px){
-    .app{
-        padding: 50%;
+
+@media (max-width:375px){
+    #main-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
-    .app img{
-        width: 30px;
-        height: 30px;
-        padding: 1%;
+    
+    #ajay-img{
+        width: 240px;
+        height: 240px;
     }
 }
