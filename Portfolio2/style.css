@@ -166,10 +166,6 @@ body{
 }
 
 @media (min-width:484px) and (max-width: 569px){
-    .header-links{
-        font-size: 15px;
-    }
-
     .connect-button{
         padding: 10px;
     }
