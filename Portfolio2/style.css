@@ -181,6 +181,30 @@ body{
     height: 50px;
 }
 
+#projects{
+    padding-top: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.project-heading{
+    font-size: 2rem;
+    color: #1b1516;
+
+}
+
+.projects-list{
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+    margin: 0 5rem;
+}
+
 @media only screen and (max-width:483px){
     .connect-button{
         margin: 0;
