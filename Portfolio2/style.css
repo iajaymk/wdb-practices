@@ -235,30 +235,60 @@ body{
     text-align: center;
     color: #575a69;
     opacity: 0.8;
+    font-size: 16px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.tags-area{
+    margin: 10px 0;
 }
 
 .tags{
-    padding: 5%;
+    padding: 2% 5%;    
+    border: 0;
+    border-radius: 5px;
+    display: inline-block;
+    margin-bottom: 5px;
+    font-weight: 700;
 }
 
 .html-tag{
     background-color: #f12d00;
+    color: white;
 }
 
 .css-tag{
     background-color: #215eb8;
+    color: white;
 }
 
 .tailwind-tag{
     background-color: #00baaf;
+    color: white;
 }
 
 .bootstrap-tag{
     background-color: #8900b4;
+    color: white;
 }
 
 .js-tag{
     background-color: #ebec43;
+    color: #000;
+}
+
+.proj-links-area{
+    margin-bottom: 5%;
+}
+
+.project-links{
+    text-decoration: none;
+    color: #000;
+    background-color: rgb(210, 207, 207);
+    padding: 2% 5%;
+    font-weight: 600;
+    border-radius: 5px;
 }
 
 @media only screen and (max-width:483px){
