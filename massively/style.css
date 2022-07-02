@@ -1,143 +1,129 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
 
 *{
     margin: 0;
     padding: 0;
-    max-width: 100%;
-    box-sizing: border-box;
+    box-sizing:border-box;
 }
+
 body{
-    background-image: url('assets/images/bg.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    z-index: 0;
-    font-family: 'Merriweather', Georgia, serif;
-    font-size: 16px;
-    line-height: 38px;
-    color: #212931;
-
-    background-color: #1e252d;
-    opacity: 0.8;
-}
-
-
-h1{
-    font-family: "Source Sans Pro";
-    font-size: 80px;
-    line-height: 80px;
-    font-style: normal;
-    font-weight: 900;
-}
-
-header{
-    display: flex;
-    height: 100%;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
-    flex-wrap: wrap;
-    color: #fff;
-    padding: 20rem 20rem 0;
-}
-header a{
-    color: #fff;
-    text-decoration:none;
-    border-bottom: 1px dotted #909498;
-}
-
-header p{
-    text-align: center;
-}
-
-.header-arrow {
-    margin-top: 2%;
-}
-
-.header-arrow a{
-    border-bottom: 0;
-}
-
-.info-section{
-    background-color: #EEEEEE;
-    display: flex;
-    width: 100%;
-}
-
-.info-form{
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    padding: 3% 8%;
-}
-
-input{
-    background: transparent;
-    border: 1px solid grey;
-    height: 30px;
-}
-
-textarea{
-    background: transparent;
-    margin-bottom: 20px;
-}
-
-.info-location{
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-}
-
-.info-loc-sections{
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 5% 15%;
-}
-
-.info-headings{
-    color: #212931;
-    font-family: "Source Sans Pro", Helvetica, sans-serif;
-    font-weight: bolder;
-    font-size: 16px;
-}
-
-.vl {
-    border-left: 1px solid gray;
-}
-
-.btn{
-    padding: 5px 10px;
-    color: #212931;
-    border: 1px solid #212931;
-    font-size: 12px;
+    font-family: Merriweather, Georgia, self;
 }
 
 .blog-area{
-    z-index: 1;
+    width: 100%;
 }
 
-.article{
-    background: white;
-    text-align: center;
-}
-
-.date-first{
+.blog-area-header{
+    background-color: #212931;
     display: flex;
-    color: #212931;
+    justify-content: space-between;
     align-items: center;
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
+    color: #fff;
+    font-size: 12.8px;
+    line-height: 19.2px;
+    font-style: normal;
+}
+
+.blog-area-nav{
+    display: flex;
+    width: 80%;
+    justify-content:flex-start;
+}
+
+.nav-options{
+    padding: 20px 10px;
+    font-weight: bold;
+}
+
+.selected{
+    background-color: white;
+    color: #212931;
+    padding: 20px 10px;
+}
+
+.blog-area .icon-container{
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+    background-color: #212931;
+    padding-right: 5px;
+}
+
+.blog-area .icon-container i{
+    width: 16px;
+    height: 16px;
+}
+
+.first-blog{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.first-date{
+    display: flex;
     justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
 }
 
-.date-first hr{
-    border-top: 0;
-    border-left: 0;
-    border-right:0 ;
-    border-bottom: 1px solid gray;
-    width: 35%;
+.first-date hr{
+    border-color:  grey;
+    width: 25%;
+    border: 0 0 1px 0;
 }
 
-.article-img-first{
-    width: 400px;
+.first-heading{
+    margin: 15px 0;
+    font-size: 2em;
+    font-family: Roboto;
+    font-weight: bolder;
+}
+
+.first-description{
+    font-size: 1em;
+    opacity: 0.7;
+    font-style: italic;
+}
+
+.first-img{
+    width: 500px;
     height: 300px;
-    display: block;
+    margin: 25px 0;
+}
+
+.btn{
+    background: transparent;
+    border: 1px solid black;
+    padding: 8px 15px;
+    font-weight: 600;
+}
+
+
+
+@media (max-width:658px){
+    .blog-area-header{
+        display: none;
+    }
+    .first-blog{
+        width: 100%;
+    }
+    .first-heading{
+        font-size: 20px;
+    }
+    .first-description{
+        font-size: 16px;
+    }
+    .first-img{
+        width: 300px;
+        height: 200px;
+    }
 }
