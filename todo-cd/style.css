@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding:0 ;
+}
+
+body{
+    background: linear-gradient(to bottom right, #ec2c2c 0%, #e9993d 100%);
+    width: 100vw;
+    height: 100vh;
+    font-family: "Poppins", sans-serif;
+}
+
+.main{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 40px;
+}
+
+.heading{
+    margin-bottom: 20px;
+}
+
+hr{
+    width: 25%;
+    margin: auto;
+}
+
+h1{
+    color: #fff;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.inputArea{
+    height: 30px;
+    width: 25%;
+    display: flex;
+    align-items: center;
+}
+
+.taskInput{
+    height: 100%;
+    width: 70%;
+    border: 0;
+    text-align: right;
+    padding: 0 5px;
+}
+
+.addButton{
+    width: 15%;
+    height: 100%;
+    color: #fff;
+    border: 0;
+    background: #e9993d;
+    font-size: 20px;
+}
+
+.delButton{
+    width: 15%;
+    height: 100%;
+    color: #fff;
+    background: #ec2c2c;
+    border: 0;
+}
+
+.todoList{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h3{
+    color: white;
+    font-size: 30px;
+}
+
+.tasks{
+    display: flex;
+    width: 25vw;
+    justify-content: space-between;
+    background-color: #FBAB7E;
+    background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.checkButton{
+    background: white;
+    border: 0;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.editButton{
+    background: white;
+    border: 0;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.deleteButton{
+    background: white;
+    border: 0;
+    border-radius: 5px ;
+    padding: 5px;
+}
+
+@media (max-width:767px){
+    .inputArea{
+        width: 80%;
+    }
+    .tasks{
+        width: 80vw;
+    }
+}
+
+@media(min-width:768px) and (max-width:1023px){
+    .inputArea{
+        width: 75%;
+    }
+    .tasks{
+        width: 75vw;
+    }
+}
