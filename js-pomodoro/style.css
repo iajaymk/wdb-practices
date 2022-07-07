@@ -34,6 +34,13 @@ body{
     align-items: center;
     justify-content: center;
 }
+#message-container{
+    background-color: #6E85B7;
+    color: white;
+    width: 100%;
+    padding: 5px 2px;
+    display: none;
+}
 #time{
     font-size: 40px;
     font-weight: 400;
